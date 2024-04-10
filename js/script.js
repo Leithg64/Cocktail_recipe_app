@@ -1,4 +1,4 @@
-let myName = 'Leith';
-document.write(myName);
-myName = 'stinky';
-document.write(myName);
+alert('Hello World');
+
+let favouriteFood = burrito;
+document.write(favouriteFood);
