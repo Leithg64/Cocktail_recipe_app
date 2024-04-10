@@ -1,5 +1,12 @@
-let cocktailList = [
-    {name: 'Margarita', strength: '8.5/10', ingredients: ['25ml Lime', '40ml Tequila', '30ml Cointreau']},
-    {name: 'Negroni', strength: '7/10', ingredients: ['30ml Gin', '30ml Dry Vermouth', '30ml Campari']},
-    {name: 'Strawberry Daiquiri', strength: '6/10', ingredients: ['50ml white Rum', '25ml Lime', '40ml strawberry puree']},
+let pokemonList = [
+    {name: 'Bulbasaur', height: 0.7, ingredients: ['Grass', 'Poison']},
+    {name: 'Charmander', height: 0.6, ingredients: ['Fire']},
+    {name: 'Squirtle', height: 0.5, ingredients: ['Water']},
+    {name: 'Pidgeotto', height: 1.1, ingredients: ['Normal', 'Flying']},
+    {name: 'Beedrill', height: 1, ingredients: ['Bug','Poison']},
+    {name: 'Geodude', height: 0.4, ingredients: ['Rock','Ground']},
+    {name: 'Poliwrath', height: 1.3, ingredients: ['Water', 'Fighting']},
+    {name: 'Haunter', height: 1.6, ingredients: ['Ghost', 'Poison']},
+    {name: 'Raichu', height: 0.8, ingredients: ['Electric']},
+    {name: 'Articuno', height: 1.7, ingredients: ['Ice', 'Flying']},
 ];
