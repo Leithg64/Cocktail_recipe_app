@@ -38,7 +38,7 @@ let pokemonList = [
 
 //iterates over the above array of pokemon objects and lists them all on the webpage, followed by their height.
 for (let i = 0; i < pokemonList.length; i++){
-    let result = pokemonList[i].height > 1.6 ? "wow, that's big" : "";
+    let result = pokemonList[i].height > 1.6 ? " - Wow, that's big" : "";
 
     document.write(pokemonList[i].name + "(Height:  " + pokemonList[i].height + ")" + result + "<br> "); 
 }
