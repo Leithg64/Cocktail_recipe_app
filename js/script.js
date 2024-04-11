@@ -1,12 +1,46 @@
 let pokemonList = [
-    {name: 'Bulbasaur', height: 0.7, ingredients: ['Grass', 'Poison']},
-    {name: 'Charmander', height: 0.6, ingredients: ['Fire']},
-    {name: 'Squirtle', height: 0.5, ingredients: ['Water']},
-    {name: 'Pidgeotto', height: 1.1, ingredients: ['Normal', 'Flying']},
-    {name: 'Beedrill', height: 1, ingredients: ['Bug','Poison']},
-    {name: 'Geodude', height: 0.4, ingredients: ['Rock','Ground']},
-    {name: 'Poliwrath', height: 1.3, ingredients: ['Water', 'Fighting']},
-    {name: 'Haunter', height: 1.6, ingredients: ['Ghost', 'Poison']},
-    {name: 'Raichu', height: 0.8, ingredients: ['Electric']},
-    {name: 'Articuno', height: 1.7, ingredients: ['Ice', 'Flying']},
+    {
+        name: 'Bulbasaur', 
+        height: 0.7, 
+        type: ['Grass', 'Poison']
+    },
+    {
+        name: 'Charmander', 
+        height: 0.6, 
+        type: ['Fire']
+    },
+    {
+        name: 'Squirtle', 
+        height: 0.5, 
+        type: ['Water']
+    },
+    {
+        name: 'Geodude',
+        height: 0.4, 
+        type: ['Rock','Ground']
+    },
+    {
+        name: 'Haunter', 
+        height: 1.6, 
+        type: ['Ghost', 'Poison']
+    },
+    {
+        name: 'Raichu', 
+        height: 0.8, 
+        type: ['Electric']
+    },
+    {
+        name: 'Articuno', 
+        height: 1.7, 
+        type: ['Ice', 'Flying']
+    },
 ];
+
+//iterates over the above array of pokemon objects and lists them all on the webpage, followed by their height.
+for (let i = 0; i < pokemonList.length; i++){
+    let result = pokemonList.height > 1 ? "wow, that's big" : "";
+    document.write(result)
+
+    document.write(pokemonList[i].name + " " + (pokemonList[i].height) + "<br> ") 
+   
+}
