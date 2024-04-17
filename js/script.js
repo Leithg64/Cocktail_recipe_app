@@ -38,9 +38,6 @@ let pokemonRepository = (function() {
     },
 ]
 
-function showDetails(pokemon) {
-    console.log(pokemon)
-}
 
 //Create list of pokemon as buttons
 function addListItem(pokemon) {
@@ -49,9 +46,13 @@ function addListItem(pokemon) {
     let button = document.createElement('button');
     button.innerText = pokemon.name;
     button.classList.add('pokemon-button');
+    button.addEventListener('click', showDetails(pokemon));
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
-    button.addEventListener('click', pokemon)
+}
+
+function showDetails(pokemon) {
+    console.log(pokemon);
 }
 
 // Return an Array of pokemon
