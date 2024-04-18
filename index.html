@@ -3,15 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Pokedex App</title>
   </head>
   <body>
-    <h1>Professor Green's Pokedex</h1>
-    <ul class="pokemon-list">
-
-    </ul>
-   
+    <h1 id="main-title">Professor Green's Pokedex</h1>
+    <button id="show-modal">Show modal</button>
+    <div id="modal-container">
+    </div>
+      <ul class="pokemon-list"></ul>
+    
     <script src="js/promise-polyfill.js"></script>
     <script src="js/fetch-polyfill.js"></script>
     <script src="js/script.js"></script>

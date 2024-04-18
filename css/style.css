@@ -1,32 +1,83 @@
 body {
-    background-color: #77DD77;
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Titillium Web", sans-serif; 
+  font-weight: 300;
+  font-style: normal;
+  background-color: #32CD32;
 }
 
-h1 {
-    text-align: center;
-    font-weight: bolder;
-    border: 2px solid black;
+.modal h1 {
+    text-transform: capitalize;
+    margin-top: 0;
 }
+
+#main-title {
+    text-align: center;
+    text-shadow: #fff;
+    font-size:50px; 
+    border: 5px solid black;
+}
+
+#modal-container {
+    display: none;
+}
+
+#modal-container.is-visible {
+  position: fixed;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999; 
+  overflow: auto; 
+  display: grid;
+  text-align: center;
+}
+
+.modal {
+  border: 8px solid black;
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 40px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.modal-close {
+  float: right;
+  border: 0;
+  background: none;
+  color: #777;
+  text-decoration: underline;
+}
+
+.modal p {
+  margin-bottom: 0;
+}
+
 
 /*Styles the list of button elements representing pokemon*/
 .pokemon-button {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Titillium Web", sans-serif;
     background-color: orange;
     display: inline-block;
     font-weight: bold;
-    border: 2px solid black;
-    padding: 10px;
+    font-size:25px;
+    text-transform: capitalize;
+    border: 5px solid black;
     margin: 5px;
-    width: 150px;
+    min-width: 200px;
     height: 50px;
 }
 
 /*effects for button elements*/
 button:hover {
-    font-style: italic;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Titillium Web", sans-serif;
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
@@ -38,8 +89,15 @@ button:hover {
 }
 
 ul {
+    display: table; 
+    margin: 0 auto;
     text-align: center;
     list-style-type: none;
     font-size: 30px;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: gray;
+    width: 300px;
+    padding-top:10px;
 }
 
