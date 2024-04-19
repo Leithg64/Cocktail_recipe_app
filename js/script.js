@@ -19,7 +19,7 @@ function addListItem(pokemon) {
 }
 
 //modal code below
-function showModal(title, text) {
+function showModal(title, text, image) {
   let modalContainer = document.querySelector('#modal-container');
 
   // Clear all existing modal content
@@ -40,6 +40,15 @@ function showModal(title, text) {
   let contentElement = document.createElement('p');
   contentElement.innerText = text;
 
+  //image element code for modal
+  let imgElement = document.createElement('p');
+  let img = document.createElement('img');
+  img.src = image;
+  img.alt = "Image of the selected Pokemon";
+  img.width = 300;
+  img.height = 200;
+
+  modal.appendChild(img);
   modal.appendChild(closeButtonElement);
   modal.appendChild(titleElement);
   modal.appendChild(contentElement);
