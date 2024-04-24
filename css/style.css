@@ -5,6 +5,18 @@ body {
   background-color: #32CD32;
 }
 
+.navbar-brand {
+ background-color: #32CD32;
+ font-weight: 20px;
+ border-radius: 15px;
+ padding: 5px;
+ border: 2px solid black; 
+}
+
+.navbar {
+  border: 4px solid black; 
+}
+
 h1 {
   text-transform: capitalize;
   margin-top: 0;
@@ -20,27 +32,18 @@ h1 {
 /* Styles for the modal */
 .modal {
   z-index: 1050;
-  border: 8px solid black;
   box-sizing: border-box;
-  background: #fff;
   padding: 40px;
   text-align: left;
   text-transform: capitalize;
-}
-
-.modal-backdrop {
-  z-index: 1040;
-  background-color: rgba(0, 0, 0, 0); /* Make the modal backdrop fully transparent */
-}
-
-.modal-backdrop.show {
-  background-color: rgba(0, 0, 0, 0.5); /* When the modal is shown, set the opacity to a desired value (e.g., 0.5) */
-}
-
+}  
 
 .modal p {
+  font-weight: bolder;
+  font-size: large;
+  padding: 10px;
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
 }
 
 /* Styles the list of button elements representing pokemon */
@@ -68,24 +71,16 @@ ul.pokemon-list {
   list-style-type: none;
   font-size: 30px;
   border: 5px solid black;
-  border-radius: 20px;
-  background-color: gray;
+  border-radius: 10px;
   width: 300px;
-  padding-top: 10px;
   margin: auto;
-}
-
-
-/* Bootstrap modal container visibility */
-.modal-backdrop.show {
-  display: block;
-}
-
-.modal.show {
-  display: block;
 }
 
 .modal-dialog {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid black;
   max-width: 40%;
   margin: auto;
 }
+
